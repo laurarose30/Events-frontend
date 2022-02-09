@@ -1,5 +1,5 @@
 import axios from "axios";
-const url = "https://eventslauraandsarah-app.herokuapp.com/";
+const url = "https://sheffieldevents.herokuapp.com/";
 
 export class ApiClient {
   constructor(tokenProvider,logoutHandler){
