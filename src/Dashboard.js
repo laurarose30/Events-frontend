@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { Button } from "bootstrap";
+
+import { Nav, Navbar, Button, NavbarBrand } from "react-bootstrap";
 
 import Add from "./Add";
 import EventCard from "./eventCard";
+import { Nav } from "react-bootstrap";
 
 
 function Dashboard(props) {
@@ -49,8 +51,15 @@ function Dashboard(props) {
   return (
     <>
       Events
+       <Navbar>
+
+              <Button id="logout" onClick={props.logout}>
+                 Logout
+                  </Button>
+
+        </Navbar>
       <br />
-      <Button id="logout" onClick={props.logout}> Logout </Button>
+      
       <div class="row row-cols-1 row-cols-md-3 g-4">
      {buildcards()}
       </div>
