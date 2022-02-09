@@ -26,7 +26,7 @@ function App() {
   return (
     <>
       {token ? (
-        <Dashboard client={client} />
+        <Dashboard client={client} logout ={() => logout()} />
       ) : (
         <Login loggedIn={(token) => login(token)} client={client} />
       )

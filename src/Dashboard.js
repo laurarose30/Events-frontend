@@ -49,6 +49,7 @@ function Dashboard(props) {
     <>
       Events
       <br />
+      <Button id="logout" onClick={props.logout}> Logout </Button>
       <div class="row row-cols-1 row-cols-md-3 g-4">
      {buildcards()}
       </div>

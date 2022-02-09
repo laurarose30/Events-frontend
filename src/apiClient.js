@@ -40,6 +40,9 @@ export class ApiClient {
     return this.apiCall("post",url + "auth/",{userName: username, password:password});
   }
 
+  logout(userName, password, ){
+    return this.apiCall("post",url + "auth/",{userName: userName, password:password });
+  }
   getEvents() {
     return this.authenticatedCall("get", url);
   }
