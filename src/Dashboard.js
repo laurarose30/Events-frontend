@@ -4,7 +4,6 @@ import { Nav, Navbar, Button, NavbarBrand } from "react-bootstrap";
 
 import Add from "./Add";
 import EventCard from "./eventCard";
-import { Nav } from "react-bootstrap";
 
 
 function Dashboard(props) {
