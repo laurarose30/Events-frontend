@@ -52,9 +52,7 @@ function Dashboard(props) {
       Events
        <Navbar>
 
-              <Button id="logout" onClick={props.logout}>
-                 Logout
-                  </Button>
+              <Button id="button" onClick={props.logout}> Logout </Button>
 
         </Navbar>
       <br />
